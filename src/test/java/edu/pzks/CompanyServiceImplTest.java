@@ -6,7 +6,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
+/*
+@author   Oleksandra Hrytsiuk
+@project   company
+@class  CompanyServiceImplTest
+@version  1.0.0
+@since 23.09.2024 - 18.06
+*/
 
 
 class CompanyServiceImplTest {
