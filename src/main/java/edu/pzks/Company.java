@@ -1,17 +1,35 @@
 package edu.pzks;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+/*
+@author   Oleksandra Hrytsiuk
+@project   L3
+@class  Company
+@version  1.0.0
+@since 22.09.2024 - 18.03
+*/
+/*
+  @author   george
+  @project   company-service
+  @class  ICompanyService
+  @version  1.0.0
+  @since 02.09.24 - 11.48
+*/
+public class Company {
+    // parent for this company nullable, when there is no parent for this
+    // company
+    private Company parent;
+    private long employeesCount;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public Company(Company parent, long employeesCount) {
+        this.parent = parent;
+        this.employeesCount = employeesCount;
+    }
+
+    public Company getParent() {
+        return parent;
+    }
+
+    public long getEmployeesCount() {
+        return employeesCount;
     }
 }
