@@ -11,7 +11,7 @@ import java.util.List;
 @project   company
 @class  CompanyServiceImplTest
 @version  1.0.0
-@since 23.09.2024 - 18.06
+@since 22.09.2024 - 18.06
 */
 
 
